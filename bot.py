@@ -74,9 +74,8 @@ def send_welcome(message):
   '/fee = ค่าบริการ/ค่าธรรมเนียม\n'
   '/autocompound = ระบบการทบต้น\n'
   '/dust = เศษค้างของเงินฝาก\n'
-  '/mvb = โปรเจคที่ TENFI แข่งขันใน BSC\n'
+  '/mvb = โปรเจคที่ TENFI แข่งขันใน BSC')
   # '/กาว = เชิญ Dino มาปล่อยกาว\n'
-  )
 
 # textDino = 'เชิญ Dino มาปล่อยกาวครับ @MrDinoWolfofDefi'
 # @bot.message_handler(commands=['กาว'])
@@ -239,7 +238,7 @@ def send_welcome(message):
   '4. เลื่อนลงมาข้อที่ 3 Emergency Withdraw\n'
   '5. พิมเลขของพูลที่จะถอน ตามนี้\n'
   'Farm/Pool ID (PID) | TEN Finance\n'
-  '0 - ADA/WBNB (Pancakeswap)\n'
+  '0 - ADA/WBNB (Pancakeswap)
   '1 - BTCB/WBNB (Pancakeswap)\n'
   '2 - WBNB/BUSD (Pancakeswap)\n'
   '3 - CAKE/WBNB (Pancakeswap)\n'
@@ -256,7 +255,6 @@ def send_welcome(message):
   '14 - TENFI (Pancakeswap)\n'
   '15 - TENFI/WBNB (Pancakeswap)\n'
   '16 - TENFI/BUSD (Pancakeswap)\n'
-  '17 - TRX/WBNB (Expired)(Pancakeswap)\n'
   '18 - ALPHA/WBNB (Pancakeswap)\n'
   '19 - BTCB/BUSD (Pancakeswap)\n'
   '20 - TWT/WBNB (Pancakeswap)\n'
@@ -269,36 +267,36 @@ def send_welcome(message):
   '29 - beltETH (Belt)\n'
   '30 - 4Belt (Belt)\n'
   '31 - TRX/BUSD (Pancakeswap)\n'
-  '32 - SKILL/BNB (Pancakeswap)\n'        
-  '33 - AXS/BNB (Pancakeswap)\n'    
-  '34 - UST/BUSD (Pancakeswap)\n'         
-  '35 - USDC/USDT (Pancakeswap)\n'         
-  '36 - POTS/BUSD (Pancakeswap)\n'
-  '37 - C98/BNB (Pancakeswap)\n'        
+  '32 - SKILL/WBNB (Pancakeswap)\n' 
+  '33 - AXS/WBNB (Pancakeswap)\n'    
+  '34 - UST/BUSD (Pancakeswap)\n'        
+  '35 - POTS/BUSD (Pancakeswap)\n'
+  '36 - C98/WBNB (Pancakeswap)\n'
+  '37 - USDC/USDT (Pancakeswap)\n'
   '38 - BANANA  (Apeswap)\n'
-  '39 - BUSD/DAI (Apeswap)\n'
+  '39 - DAI/BUSD (Apeswap) \n'
   '40 - USDC/BUSD (Apeswap)\n'
   '41 - USDT/BUSD (Apeswap)\n'
   '42 - WBNB/BUSD (Apeswap)\n'
   '43 - BANANA/BUSD (Apeswap)\n'
   '44 - BANANA/WBNB (Apeswap)\n'
-  '45 - UNI/WBNB (Biswap)\n'
+  '45 - WBNB/UNI (Biswap)\n'
   '46 - ADA/WBNB (Biswap)\n'
   '47 - DOT/WBNB (Biswap)\n'
-  '48 - LINK/WBNB (Biswap)\n'
+  '48 - WBNB/LINK (Biswap)\n'
   '49 - BSW/WBNB (Biswap)\n'
   '50 - ETH/USDT (Biswap)\n'
-  '51 - BTCB/USDT (Biswap)\n'
+  '51 - USDT/BTCB (Biswap)\n'
   '52 - BTCB/WBNB (Biswap)\n'
   '53 - WBNB/BUSD (Biswap)\n'
   '54 - UST/BUSD (Biswap)\n'
   '55 - USDT/WBNB (Biswap)\n'
   '56 - ETH/WBNB (Biswap)\n'
-  '57 - USDC/USDT (Biswap)\n'
+  '57 - USDT/USDC (Biswap)\n'
   '58 - BSW (Biswap)\n'
   '59 - ETH/BTCB (Biswap)\n'
   '60 - USDT/BUSD (Biswap)\n'
-  '61 - TENFI/WBNB (Biswap)\n')
+  '61 - TENFI/WBNB (Biswap)')
 
 @bot.message_handler(commands=['security'])
 def send_welcome(message):
@@ -475,18 +473,6 @@ def send_welcome(message):
   for recipient_id in listofids:
     bot.send_sticker(recipient_id, sticker_saturn)
     bot.send_message(recipient_id, 'จะไปทำไมพระจันทร์ถ้าปลายทางเราคือดาวเสาร์')
-
-
-	# group chat message
-
-# @bot.message_handler(commands=['xxx'])
-# def send_welcome(message):
-#   if message.chat.type != "private":
-#     for recipient in list_test:
-#       bot.send_sticker(recipient, sticker_moon)
-#       bot.send_message(recipient, 'moon')
-#   else:
-#     bot.send_message(recipient, 'else')
 
 wellcome_gif = ['https://media.giphy.com/media/FQyQEYd0KlYQ/giphy.gif',
   'https://media.giphy.com/media/l4JyOCNEfXvVYEqB2/giphy.gif?cid=790b761160ebca57830d633ac703d01604d28286d56419bb&rid=giphy.gif&ct=g',
@@ -711,23 +697,6 @@ def send_welcome(message):
   'นั่นหมายความว่า บัตรทองจะมีส่วนแบ่งเยอะกว่าเนื่องจากคนแบ่งน้อยกว่า\n'
   'Tenlots ยังสามารถนำไปใช้ในการเพิ่ม APR ใน Yieldex อีกด้วย\n')
 
-
-# @bot.message_handler()
-# def send_alert(message):
-#   bot.send_message(chat_id_test, text='test')
-
-# t = timer(1.0, send_alert)
-# t.start()  # after 30 seconds, "hello, world" will be printed
-# @bot.message_handler(commands=['test'])
-# def send_welcome(message):
-#   if message.chat.id == message.chat.id:
-#     bot.reply_to(message, 'ssss')
-#   else :
-#     bot.reply_to(message, (random.choice(randomTen)))
-
-
-
-
 @bot.message_handler()
 def send_welcome(message):
   if message.text == 'TEN' or message.text == 'TENFI' or message.text == 'ten' or message.text == 'tenfi' or message.text == 'Tenfi':
@@ -762,41 +731,3 @@ while True:
     bot.polling()
   except Exception:
     time.sleep(15)
-# {
-#     "update_id": 814531422,
-#     "message": {
-#         "message_id": 464,
-#         "from": {
-#             "id": 1071921322,
-#             "is_bot": false,
-#             "first_name": "Tuckkiez | TENizen \ud83c\uddf9\ud83c\udded",
-#             "username": "tuckkiez"
-#         },
-#         "chat": {
-#             "id": -1001540881364,
-#             "title": "Admin TENFI",
-#             "type": "supergroup"
-#         },
-#         "date": 1629477384,
-#         "new_chat_participant": {
-#             "id": 211246197,
-#             "is_bot": true,
-#             "first_name": "Telegram Bot Raw",
-#             "username": "RawDataBot"
-#         },
-#         "new_chat_member": {
-#             "id": 211246197,
-#             "is_bot": true,
-#             "first_name": "Telegram Bot Raw",
-#             "username": "RawDataBot"
-#         },
-#         "new_chat_members": [
-#             {
-#                 "id": 211246197,
-#                 "is_bot": true,
-#                 "first_name": "Telegram Bot Raw",
-#                 "username": "RawDataBot"
-#             }
-#         ]
-#     }
-# }
