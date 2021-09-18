@@ -576,22 +576,6 @@ def test_send_message_with_inlinemarkup(self):
 #   bot.reply_to(message, text_messages['welcome'].format(name=name))
 
 
-
-
-# file_data = open('../examples/detailed_example/kitten.jpg', 'rb')
-
-# @bot.message_handler(commands=['test'])
-# def send_welcome(message):
-#   bot.send_photo(message, open(img1, 'rb'))
-
-# @bot.message_handler(regexp=r'lambo LAMBO')
-# def send_welcome(message):
-#   bot.send_message(chat_id_test, 
-#   'Lambo : คือแปลว่าการที่ราคาเหรียญพุ่งขึ้นไปสูงมาก ๆ เปรียบเทียบกับราคาของเหรียญที่เพิ่มขึ้น จนสามารถซื้อรถ Lamborghini ได้หนึ่งคัน หากอยู่ในกลุ่ม Telegram ของต่างชาติมักเจอคำว่า When Lambo ?'
-#   )
-# sticker_dop = 'CAACAgUAAxkBAAJDYWEiLv7lYqpOH3Oy6vP2u-a7hpc3AAL1AgACQfqYVu8UjzD2YsBQIAQ'
-
-
 randomText= ['ของเค้าก็ดีนะ','ทำไมต้องพูดถึงเหรียญอื่นด้วย TENFI ดีกว่าตั้งเยอะ','เตือน*','หนีไป','ก็พอได้นะ']
 randomTen= ['ตัวนี้คือดีย์ Jarvis รู้ Jarvis เรียนมา','ไม่ซื้อตอนนี้ระวังตกรถ Jarvis เตือนแล้วนะ','ตัวนี้ดี เชื่อ Jarvis', 'หลุมเพื่อน หลุม']
 randomJarvis= ['มีอะไรให้รับใช้ครับ','ว่าไงครับ','ไม่สนิทอย่าเรียกบ่อย','เพื่อนเล่นหรอ','ครับนาย','YES BOSS','Sir, yes sir!', 'ได้ครับพี่ ดีครับผม เหมาะสมครับท่าน']
