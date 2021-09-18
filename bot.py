@@ -238,7 +238,7 @@ def send_welcome(message):
   '4. เลื่อนลงมาข้อที่ 3 Emergency Withdraw\n'
   '5. พิมเลขของพูลที่จะถอน ตามนี้\n'
   'Farm/Pool ID (PID) | TEN Finance\n'
-  '0 - ADA/WBNB (Pancakeswap)
+  '0 - ADA/WBNB (Pancakeswap)\n'
   '1 - BTCB/WBNB (Pancakeswap)\n'
   '2 - WBNB/BUSD (Pancakeswap)\n'
   '3 - CAKE/WBNB (Pancakeswap)\n'
