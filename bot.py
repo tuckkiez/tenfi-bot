@@ -7,7 +7,7 @@ import re
 
 import random
 
-bot_token = '1950492866:AAH3WS1-OBFYHxCFVb_julAw0mYdftDarp0'
+bot_token = '1950492866:AAEtsJaATNOJ6ZIyJQ7Yh7-DmEyJ_98QgPs'
 #https://api.telegram.org/bot1950492866:AAHoMApimzGSG3XOOCaTFfRhj7EUTzcSqpo/getMe
 #https://api.telegram.org/bot1950492866:AAHoMApimzGSG3XOOCaTFfRhj7EUTzcSqpo/setWebhook
 
@@ -509,38 +509,38 @@ def test_send_message_with_inlinemarkup(self):
   # wellcome_media = bot.send_animation(chatid, (random.choice(wellcome_gif)))
 
 
-# @bot.message_handler(func=lambda m: True, content_types=['new_chat_members'])
-# def test_send_message_with_inlinemarkup(self):
-#   text = 'ยินดีต้อนรับเข้าสู่ TEN FINANCE! 💎\nTENFI ทำให้ Defi เป็นเรื่องง่าย 🔥\nศึกษาข้อมูลของ TEN FINANCE ได้จากการพิมพ์คำสั่งต่างๆตามนี้ 👉'
-#   bot.send_video(chatid, intro_vdo, caption=text,disable_notification=True)
-#   bot.send_message(chatid, 
-#   'ข้อมูลเบื้องต้นเกี่ยวกับ TEN Finance\n'
-#   '/intro = แนะนำตัว TEN Finance\n'
-#   '/address = Contract address\n'
-#   '/links = รวมลิ้งต่างๆของ TENFI\n'
-#   '/roadmap = แผนโปรเจคในอนาคต\n'
-#   '/tokenomics = แผนธุรกิจของเรา\n'
-#   '/security = ความปลอดภัยของเรา\n'
-#   '/price = เช็คราคา\n'
-#   '/chart = กราฟราคา TENFI\n'
-#   '/yieldex = Yieldex คืออะไร?\n'
-#   '/tenlots = Tenlots คืออะไร?\n'
-#   '/mrten = mr.ten คือใคร?\n'
-#   '/dev = ทีมงานของ TEN\n' 
-#   '/founders = ผู้ก่อตั้ง TENFI\n'
-#   '/moon = wen lambo\n'
-#   '/hold = ถือไปทำไม\n'
-#   '/skynet = certik skynet\n'
-#   '/tracker = ติดตามพอร์ทที่มี TENFI ได้ที่นี่\n'
-#   '/flashloan = ป้องกันการ flashloan อย่างไร\n'
-#   '/gas , /highgas = วิธีแก้ไขถ้าพบค่าแก๊สผิดปกติ\n'
-#   '/tenzap = บริการฝาก LP ง่ายๆ\n'
-#   '/lp = liquidity provider\n'
-#   '/fee = ค่าบริการ/ค่าธรรมเนียม\n'
-#   '/autocompound = ระบบการทบต้น\n'
-#   '/dust = เศษค้างของเงินฝาก\n'
-#   '/mvb = โปรเจคที่ TENFI แข่งขันใน BSC\n'
-#   )
+@bot.message_handler(func=lambda m: True, content_types=['new_chat_members'])
+def test_send_message_with_inlinemarkup(self):
+  text = 'ยินดีต้อนรับเข้าสู่ TEN FINANCE! 💎\nTENFI ทำให้ Defi เป็นเรื่องง่าย 🔥\nศึกษาข้อมูลของ TEN FINANCE ได้จากการพิมพ์คำสั่งต่างๆตามนี้ 👉'
+  bot.send_video(chatid, intro_vdo, caption=text,disable_notification=True)
+  bot.send_message(chatid, 
+  'ข้อมูลเบื้องต้นเกี่ยวกับ TEN Finance\n'
+  '/intro = แนะนำตัว TEN Finance\n'
+  '/address = Contract address\n'
+  '/links = รวมลิ้งต่างๆของ TENFI\n'
+  '/roadmap = แผนโปรเจคในอนาคต\n'
+  '/tokenomics = แผนธุรกิจของเรา\n'
+  '/security = ความปลอดภัยของเรา\n'
+  '/price = เช็คราคา\n'
+  '/chart = กราฟราคา TENFI\n'
+  '/yieldex = Yieldex คืออะไร?\n'
+  '/tenlots = Tenlots คืออะไร?\n'
+  '/mrten = mr.ten คือใคร?\n'
+  '/dev = ทีมงานของ TEN\n' 
+  '/founders = ผู้ก่อตั้ง TENFI\n'
+  '/moon = wen lambo\n'
+  '/hold = ถือไปทำไม\n'
+  '/skynet = certik skynet\n'
+  '/tracker = ติดตามพอร์ทที่มี TENFI ได้ที่นี่\n'
+  '/flashloan = ป้องกันการ flashloan อย่างไร\n'
+  '/gas , /highgas = วิธีแก้ไขถ้าพบค่าแก๊สผิดปกติ\n'
+  '/tenzap = บริการฝาก LP ง่ายๆ\n'
+  '/lp = liquidity provider\n'
+  '/fee = ค่าบริการ/ค่าธรรมเนียม\n'
+  '/autocompound = ระบบการทบต้น\n'
+  '/dust = เศษค้างของเงินฝาก\n'
+  '/mvb = โปรเจคที่ TENFI แข่งขันใน BSC\n'
+  )
 
 
 # @bot.message_handler(func=lambda m: True, content_types=['new_chat_members'])
@@ -562,18 +562,7 @@ def test_send_message_with_inlinemarkup(self):
 #   assert ret_msg.message_id 
   # bot.send_video(chat_id_test, intro_vdo, caption='tenst')
 
-# def on_user_joins(message):
-#   if not is_api_group(message.chat.id):
-#       return
 
-#   name = message.new_chat_participant.first_name
-#   if hasattr(message.new_chat_participant, 'last_name') and message.new_chat_participant.last_name is not None:
-#       name += u" {}".format(message.new_chat_participant.last_name)
-
-#   if hasattr(message.new_chat_participant, 'username') and message.new_chat_participant.username is not None:
-#       name += u" (@{})".format(message.new_chat_participant.username)
-
-#   bot.reply_to(message, text_messages['welcome'].format(name=name))
 
 
 randomText= ['ของเค้าก็ดีนะ','ทำไมต้องพูดถึงเหรียญอื่นด้วย TENFI ดีกว่าตั้งเยอะ','เตือน*','หนีไป','ก็พอได้นะ']
