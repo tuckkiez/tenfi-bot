@@ -153,19 +153,7 @@ def send_welcome(message):
 @bot.message_handler(commands=['yieldex'])
 def send_message(message):
   for recipient_id in listofids:
-    bot.send_photo(recipient_id, yieldex_img, 
-    'Yieldex คืออะไร?\n\n'
-    'Yieldexเกิดจากคำสองคำ คือคำว่า Yield ซึ่งมาจาก Yield Farming และคำว่า Index ซึ่งเป็นคำที่ใช้สื่อถึงการสร้างดัชนี (เหมือน SET TOP 100) ของคู่ LP ต่างๆในการทำฟาร์ม Yield \n\n'
-    'ผู้ใช้งานเพียงแค่เตรียม BUSD หรือ BNB เท่านั้น หลังจากนั้นเลือกแผนการลงทุนที่ต้องการ จากนั้นด้วยคลิกเดียว Yieldex จะทำการแบ่งเงินลงทุนออกเป็นส่วนๆ นำไปซื้อเซ็ทเหรียญที่เราเลือกไว้ ต่อด้วยทำการผูก LP 5-8คู่ และยังนำไปฝากให้เราทั้งหมดภายในคลิกเดียว! โดยจะได้ผลตอบแทนเป็นการ auto compound ในทุกๆ LP และได้ TENFI เป็นรางวัลเสริม\n\n'
-    'ในตอนนี้มีแผนการลงทุนอยู่ 3 แผนคือ\n'
-    '1.SLP-C = Stable โดยจะประกอบไปด้วยคู่ Stable และ TENFI/BUSD ผันผวนน้อย ได้ผลตอบแทนเหมาะสม\n\n'
-    '2.PLP-C = Premium โดยจะเป็นเหรียญจากตลาดหลัก เช่น BTC,ETH,BNB,CAKE,TENFI ผันผวนสูงขึ้น แลกกับการได้รับผลตอบแทนที่มากขึ้น\n\n'
-    '3.HLP-C = High Yield โดยจะเป็นเหรียญที่ผันผวนสูงสุด แต่ได้ผลตอบแทนสูงสุด รายละเอียด LP ของแผนนี้ รอวันเปิดตัว\n\n'
-    'ในเวอร์ชั่นแรก จะใช้ LP จาก Pancake ทั้งหมด แต่ในอนาคต จะมีแผนการลงทุนเพิ่ม รวมไปถึงจะมี LP จาก Apeswap และ Biswap เข้ามาผสมร่วมด้วย\n\n'
-    'มันเหมาะกับ คนที่ต้องการฟาร์ม yield แต่ยังไม่ชำนาญ หรือคนที่ต้องการลงทุนหลายๆคู่ LP แต่ไม่อยากเสียเวลาสร้าง LP ลดเวลาการจัดการให้เหลือแค่ไม่กี่คลิก\n\n'
-    'Yieldex มี deposit fee 1% จากยอดที่ฝาก และไม่มีค่า fee สำหรับการถอน\n\n'
-    'ทุกๆ  Deposit fee ที่เกิดขึ้นจาก Yieldex จะถูกแบ่งออกเป็น 80% แจกจ่ายให้กับผู้ที่ถือ TENFI ที่เคลมสิทธิ์ใน TEN Lots และ 20% เข้า TEN finance เพื่อใช้ในการบริการจัดการระบบต่อไป\n\n'
-    'อ่านบทความฉบับเต็มเกี่ยวกับ Yieldex ได้ที่ : https://medium.com/@tenfithai/')
+    bot.send_photo(recipient_id, yieldex_img, 'Yieldex คืออะไร?\n1.Yieldex คือการผูก LP โดยจำเป็นต้องมี Tenfi อยู่ในนั้น เป็นกุญแจเปิด Pool\n2.ผลตอบแทนดีกว่า Farm ในขณะที่ APY ผันผวนน้อย ไม่แกว่งเหมือนในฟาร์ม\n3.เลือกความเสี่ยงได้เหมือนกองทุน\n -เสี่ยงมาก ผันผวนสูง( ใช้ Tenfi เยอะ)\n -เสี่ยงกลาง ผันผวนปกติ (ใช้ Tenfi กลาง)\n -เสี่ยงต่ำ stable (ใช้ Tenfi น้อย)\n4.ทุก Yieldex Pool จำเป็นใช้ Tenfi ในการฟาร์ม\n5.ได้เงินต่อที่ 2 จากการถือ Tenfi (ถือเฉยๆ, ฝาก stake เดี่ยว และ ฝากคู่ LP ได้ทั้งหมด) ในรูปแบบของ BUSD เกิดจาก Deposit Fee ของ Yieldex เรียกว่ายิ่งมีคนฝากเยอะ ส่วนแบ่งเป็น เงิน BUSD หรือเงินสดก็ได้เยอะตามอัตราส่วนการถือ Tenfi' '\n\n' 'สรุปคือเกิดแรงซื้อ Tenfi เพื่อฟาร์มที่มีประสิทธิภาพสูงใน Yieldex และมีเงินไว้ใช้ในขณะที่ไม่ต้องขาย Tenfi หรือถอนฟาร์ม. ทำให้ไม่เกิด Sell pressure ด้วยการหมุนเวียนของระบบฟาร์ม มั่นใจว่าจะทำให้เหรียญราคาโดดขึ้นแน่นอน')
 
 @bot.message_handler(commands=['dev'])
 def send_welcome(message):
@@ -682,6 +670,24 @@ def send_welcome(message):
   'นั่นหมายความว่า บัตรทองจะมีส่วนแบ่งเยอะกว่าเนื่องจากคนแบ่งน้อยกว่า\n'
   'Tenlots ยังสามารถนำไปใช้ในการเพิ่ม APR ใน Yieldex อีกด้วย\n')
 
+
+# @bot.message_handler(commands=['yieldex'])
+# def send_message(message):
+#     bot.send_photo(chatid, yieldex_img, ' ')
+#     bot.send_message(chatid, 
+#     'Yieldex คืออะไร?\n\n'
+#     'Yieldexเกิดจากคำสองคำ คือคำว่า Yield ซึ่งมาจาก Yield Farming และคำว่า Index ซึ่งเป็นคำที่ใช้สื่อถึงการสร้างดัชนี (เหมือน SET TOP 100) ของคู่ LP ต่างๆในการทำฟาร์ม Yield \n\n'
+#     'ผู้ใช้งานเพียงแค่เตรียม BUSD หรือ BNB เท่านั้น หลังจากนั้นเลือกแผนการลงทุนที่ต้องการ จากนั้นด้วยคลิกเดียว Yieldex จะทำการแบ่งเงินลงทุนออกเป็นส่วนๆ นำไปซื้อเซ็ทเหรียญที่เราเลือกไว้ ต่อด้วยทำการผูก LP 5-8คู่ และยังนำไปฝากให้เราทั้งหมดภายในคลิกเดียว! โดยจะได้ผลตอบแทนเป็นการ auto compound ในทุกๆ LP และได้ TENFI เป็นรางวัลเสริม\n\n'
+#     'ในตอนนี้มีแผนการลงทุนอยู่ 3 แผนคือ\n'
+#     '1.SLP-C = Stable โดยจะประกอบไปด้วยคู่ Stable และ TENFI/BUSD ผันผวนน้อย ได้ผลตอบแทนเหมาะสม\n\n'
+#     '2.PLP-C = Premium โดยจะเป็นเหรียญจากตลาดหลัก เช่น BTC,ETH,BNB,CAKE,TENFI ผันผวนสูงขึ้น แลกกับการได้รับผลตอบแทนที่มากขึ้น\n\n'
+#     '3.HLP-C = High Yield โดยจะเป็นเหรียญที่ผันผวนสูงสุด แต่ได้ผลตอบแทนสูงสุด รายละเอียด LP ของแผนนี้ รอวันเปิดตัว\n\n'
+#     'ในเวอร์ชั่นแรก จะใช้ LP จาก Pancake ทั้งหมด แต่ในอนาคต จะมีแผนการลงทุนเพิ่ม รวมไปถึงจะมี LP จาก Apeswap และ Biswap เข้ามาผสมร่วมด้วย\n\n'
+#     'มันเหมาะกับ คนที่ต้องการฟาร์ม yield แต่ยังไม่ชำนาญ หรือคนที่ต้องการลงทุนหลายๆคู่ LP แต่ไม่อยากเสียเวลาสร้าง LP ลดเวลาการจัดการให้เหลือแค่ไม่กี่คลิก\n\n'
+#     'Yieldex มี deposit fee 1% จากยอดที่ฝาก และไม่มีค่า fee สำหรับการถอน\n\n'
+#     'ทุกๆ  Deposit fee ที่เกิดขึ้นจาก Yieldex จะถูกแบ่งออกเป็น 80% แจกจ่ายให้กับผู้ที่ถือ TENFI ที่เคลมสิทธิ์ใน TEN Lots และ 20% เข้า TEN finance เพื่อใช้ในการบริการจัดการระบบต่อไป\n\n'
+#     'อ่านบทความฉบับเต็มเกี่ยวกับ Yieldex ได้ที่ : https://medium.com/@tenfithai/')
+
 @bot.message_handler()
 def send_welcome(message):
   if message.text == 'TEN' or message.text == 'TENFI' or message.text == 'ten' or message.text == 'tenfi' or message.text == 'Tenfi':
@@ -689,26 +695,7 @@ def send_welcome(message):
   elif message.text == 'BNB' or message.text == 'bnb':
     bot.reply_to(message, '1 BNB = 1 TENFI')
 
-  # bot.send_message(chat_id_test, (random.choice(randomText)))
-  # if message.text == 'dop' or message.text == 'Dop' or message.text == 'DOP' or message.text == 'wad' or message.text == 'wex' or message.text == 'cake' or message.text == 'definix' or message.text == 'six' or message.text == 'WAD' or message.text == 'WEX' or message.text == 'CAKE' or message.text == 'DEFINIX' or message.text == 'SIX' or message.text == 'WARDEN' or message.text == 'tuk' or message.text == 'wad' or message.text == 'wad' or message.text == 'wad' or message.text == 'wad':
-  # elif message.text == 'Test':
-  #   bot.send_message(chat_id_test, 'Test succeeded')
-  # else:
-  #   bot.send_message(chat_id_test, 'Sorry I don\'t get it!')
-  # bot.send_sticker(chatid, sticker_dop)
-  # bot.send_message(chatid, 'จะพูดถึงเหรียญอื่นทำไม ในเมื่อ Tenfi ดีกว่าตั้งเยอะ')
 
-# sticker_goodnight = 'CAACAgUAAxkBAAJDY2Eip9KALqT8qhfj7Kn1zzZXZ0WhAAKEAQACdTdYVsbJc07RnY3aIAQ'
-
-# @bot.message_handler(regexp=r'/ฝันดีครับ|Goodnight|goodnight/g')
-# def send_welcome(message):
-#   bot.send_sticker(chat_id_test, sticker_goodnight)
-#   bot.send_message(chat_id_test, 'ฝันดีครับชาว TENizens')
-
-# @bot.message_handler(func=lambda message: message.text == "ฝันดีครับ" or "ฝันดี" or "ฝันดีคะ" or "ฝันดีค่ะ")
-# def send_welcome(message):
-#   bot.send_sticker(chatid, sticker_goodnight)
-#   bot.send_message(chatid, 'ฝันดีครับชาว TENizens')
 
 
 while True:
