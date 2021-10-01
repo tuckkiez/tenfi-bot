@@ -658,17 +658,7 @@ def send_welcome(message):
 
 @bot.message_handler(commands=['tenlots'])
 def send_welcome(message):
-  bot.reply_to(message,  'Tenlots คืออะไร\n\n'
-  'Tenlots คือจำนวน Tenfi ที่คุณมี ไม่ว่าจะฟาร์มเดี่ยว ฟาร์มคู่ LP หรือถือใน wallet ก็นับเป็น tenlots ทั้งหมด\n\n'
-  'สมมติ เรามี Tenfi ที่ฟาร์มในระบบทั้งหมด 450000 เหรียญ\n'
-  'ใน Tab ของ Tenlots เราก้จะโชว์ 450000 ซึ่งเราสามารถนำไป stake สร้าง passive income ในรูปแบบของ BUSD หรือ BNB สามารถเลือกได้ รายได้มาจาก Yieldex Revenue มีอัตราส่วนดังนี้\n\n'
-  '1. บัตรทองแดง ใช้ Tenlots สองพันห้าร้อยเหรียญต่อใบ มีจำกัด หนึ่งหมื่นใบ\n'
-  '2. บัตรเงิน ใช้ Tenlots ห้าหมื่นเหรียญต่อใบ มีจำกัด สองพันใบ\n'
-  '3. บัตรทอง ใช้ Tenlots สองแสนห้าหมื่นเหรียญต่อใบ มีจำกัด สองร้อยใบ\n\n'
-  'การแบ่ง รายได้ จะมาจาก Yieldex Revenue แบ่งออกเป็นสามส่วน \n'
-  '33.33% สำหรับแต่ละประเภทของบัตร\n'
-  'นั่นหมายความว่า บัตรทองจะมีส่วนแบ่งเยอะกว่าเนื่องจากคนแบ่งน้อยกว่า\n'
-  'Tenlots ยังสามารถนำไปใช้ในการเพิ่ม APR ใน Yieldex อีกด้วย\n')
+  bot.reply_to(message,  'Coming Soon!!!')
 
 
 @bot.message_handler(commands=['yieldex'])
