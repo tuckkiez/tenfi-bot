@@ -40,7 +40,7 @@ roadmap = 'https://i.imgur.com/PwIgfG3.jpg'
 founders = 'https://i.imgur.com/cesQlYQ.jpg'
 intro = 'https://i.imgur.com/zAKBxfK.jpg'
 yieldex_img = 'https://i.imgur.com/QI7iyHN.png'
-
+tenlot_img = 'https://imgur.com/x0BfHRn'
 # @bot.message_handler(commands=['start'])
 # def send_welcome(message):
 #   bot.reply_to(message, 'Welcome! Tenizen')
@@ -658,8 +658,55 @@ def send_welcome(message):
 
 @bot.message_handler(commands=['tenlots'])
 def send_welcome(message):
-  bot.reply_to(message,  'Coming Soon!!!')
-
+  bot.send_photo(chatid, tenlot_img, ' ')
+  bot.send_message(chatid, 
+    'TEN LOTS ทุกวันนี้ เหรียญ Governance Token ในตลาด Yield Farming ส่วนใหญ่นั้น แทบจะไม่มีเหตุผลให้ต้องถือต่อ หากไม่ใช่เพื่อการเก็งกำไร ผู้คนส่วนใหญ่จะฟาร์มเหรียญนั้นๆ ออกมา แล้วรินขายนั่นคือปัญหาที่ทำให้เกิดแรงขายตลอดเวลา และมูลค่าของเหรียญจะค่อยๆ ลดลงอยู่เสมอ เพราะคนฟาร์มไม่มีเหตุผลให้ต้องเก็บเหรียญ Gov. Token Mr. TEN ผู้ก่อตั้งเล็งเห็นถึงปัญหานี้จึงสร้างระบบ TEN Lots ขึ้นมาเพื่อหาวิธีให้คนถือเหรียญ TENFI ให้ได้และลดการขาย จึงเป็นจุดเริ่มต้นของ TEN Lots\n'
+    'TEN Lots เป็นส่วนหนึ่งของ TENFI Ecosystem โดยมีกลไกการทำงาน คือการนำรายได้ 80% ของ Deposit fee ที่จะเกิดขึ้นจากการฝากที่ /yieldex มาแจกจ่ายให้กับผู้ที่ Stake TENFI  เพื่อให้ลดแรงขาย ทำให้ผู้มี TENFI นอกจากจะได้ Reward จากการฟาร์มแล้ว ยังได้ผลประโยชน์หรือรายได้อีกต่อหนึ่งจาก TEN Lots\n\n'
+    'TEN LOTS\n'
+    'มีทั้งหมด 3 ระดับ\n'
+    'โดย Lot แต่ละระดับมีจำนวนสิทธิ์ และต้องมีจำนวน TENFI ขั้นต่ำ ดังนี้\n'
+    'Bronze - 2,500 TENFI - มี 30,000 Lots\n'
+    'Silver - 50,000 TENFI - มี 1,500 Lots\n'
+    'Gold - 250,000 TENFI - มี 200 Lots\n\n'
+    'การกดรับสิทธิ์\n'
+    'ได้ 1 Lot ต่อ wallet\n'
+    'ให้กดหน้าเว็บ TEN finance ที่มุมด้านบนขวา\n\n'
+    'การรับสิทธิ์ Tenlots ไม่ต้องเสีย TENFI \n'
+    'เพียงแค่ Stake TENFI หรือ TENFI LP เท่านั้น!!\n'
+    'ไม่ว่าจะเป็นการ..\n'
+    '- Stake ใน Vaults ของ Ten finance\n'
+    '- Stake ใน Yieldex\n'
+    '- Stake ใน Apeswap, Biswap, Beefy \n'
+    'TEN Lots ก็นับจำนวน TENFI หมด\n\n'
+    'สำหรับ TENFI LP ให้นำจำนวน TENFI ใน LP x2 = จำนวน TENFI ที่จะรับสิทธิ์ใน TEN Lots\n'
+    'โดยนับจำนวน TENFI ในวันที่กดรับสิทธิ์ TEN Lots ไม่ได้นับตั้งแต่วันที่ผูก LP\n\n'
+    'ใครกดก่อน ได้ Lot ก่อน ซึ่งมีจำนวนจำกัด และทยอยปล่อย Lot เพิ่มขึ้นในทุกๆ วัน\n\n'
+    'รายได้จาก Deposit Fee 1% ของ YIELDEX \n'
+    'มอบให้ TEN finance 0.2%\n'
+    'มอบให้ผู้ถือ TEN Lots 0.8%\n\n'
+    'โดยรายได้ที่มอบให้ผู้ถือ TEN Lots จะถูกแบ่งออกตามระดับ ดังนี้\n'
+    'Bronze - 25%\n'
+    'Silver - 45%\n'
+    'Gold - 30%\n\n'
+    'เมื่อกด Claim reward จะได้ตามสัดส่วน Vested ตามจำนวนวันที่ reward สะสม\n\n'
+    'ถ้า Claim reward จาก Ten Lots เมื่อไหร่\n'
+    'จะเริ่มนับวันสะสมใหม่เป็นวันที่ 1 และ reward สะสม จะเริ่มนับ 0 ใหม่\n\n'
+    'ใครกดรับสิทธิ์ Ten Lots ก่อน\n'
+    'จะได้รับ reward สะสมจาก Ten Lots ก่อน\n'
+    'และเริ่มนับจำนวนวันที่สะสมก่อน\n\n'
+    'การ Claim reward จาก Ten Lots\n'
+    'Example 1\n'
+    'ณ วันที่ 95 สะสม reward ได้ 200$\n'
+    'Claim ได้ 50% = 100$ .. อีก 100$ ถูกยึดให้ Dev\n'
+    'reward สะสมจะกลายเป็น 0 และเริ่มนับวันที่สะสมใหม่เป็นวันที่ 1\n\n'
+    'Example 2\n'
+    'ณ วันที่ 1 สะสม reward ได้ 10$\n'
+    'Claim ได้ 25% = 2.5$ .. อีก 7.5$ ถูกยึดให้ Dev\n'
+    'reward สะสมจะกลายเหลือ 0 และเริ่มนับวันที่สะสมใหม่เป็นวันที่ 1\n\n'
+    'Example 3\n'
+    'ณ วันที่ 365 สะสม reward ได้ 10000$\n'
+    'Claim ได้ 100% = 10000$\n'
+    'reward สะสมจะกลายเหลือ 0 และเริ่มนับวันที่สะสมใหม่เป็นวันที่ 1')
 
 @bot.message_handler(commands=['yieldex'])
 def send_message(message):
