@@ -54,6 +54,7 @@ def send_welcome(message):
   '/address = Contract address\n'
   '/links = รวมลิ้งต่างๆของ TENFI\n'
   '/roadmap = แผนโปรเจคในอนาคต\n'
+  '/howto = วิธีใช้งาน TENFI และ Yieldex เบื้องต้น\n'
   '/tokenomics = แผนธุรกิจของเรา\n'
   '/security = ความปลอดภัยของเรา\n'
   '/price = เช็คราคา\n'
@@ -103,6 +104,12 @@ def send_welcome(message):
 def send_welcome(message):
   # bot.reply_to(message, 'กรุณาระวังคำพูด @MrDinoWolfofDefi')
   bot.send_message(chatid,'กรุณาระวังคำพูด @MrDinoWolfofDefi', reply_to_message_id=message.reply_to_message.id)
+
+howto_vdo = 'https://vod-progressive.akamaized.net/exp=1635006572~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2636%2F25%2F638182048%2F2924353091.mp4~hmac=2b009ed5df22ae0e996eb7ec389bf64daab25c1a47244c6f95290c43bb9ed6f9/vimeo-prod-skyfire-std-us/01/2636/25/638182048/2924353091.mp4'
+
+@bot.message_handler(commands=['howto'])
+def send_welcome(message):
+  bot.send_message(chat_id_test, 'https://www.youtube.com/watch?v=EinqBW7Yv-s')
 
 @bot.message_handler(commands=['ban'])
 def send_welcome(message):
@@ -212,9 +219,9 @@ def send_welcome(message):
   bot.reply_to(message, 
   'ทุก pool มี Auto-compound ซึ่งจะทบต้นให้วันละครั้ง เวลา 9:30 UTC หรือ 16:30 น. ตามเวลาเมืองไทย \n\n'
   '** ยกเว้นพูลที่มี TENFI ทั้ง 3 pool ได้แก่\n'
-  'TENFI\n'
-  'TENFI-BUSD\n'
-  'TENFI-WBNB\n'
+  'TENFI(Pancake)\n'
+  'TENFI-BUSD(Pancake)\n'
+  'TENFI-WBNB(Pancake)\n'
   'จะไม่มี Auto-compound\n\n'
   'Reward จะแบ่งออกเป็น 2 ส่วน\n'
   'โดยรายละเอียดของแต่ละพูล ให้กดดูตรงปุ่ม "Manage"\n\n'
