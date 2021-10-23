@@ -109,7 +109,7 @@ howto_vdo = 'https://vod-progressive.akamaized.net/exp=1635006572~acl=%2Fvimeo-p
 
 @bot.message_handler(commands=['howto'])
 def send_welcome(message):
-  bot.send_message(chat_id_test, 'https://www.youtube.com/watch?v=EinqBW7Yv-s')
+  bot.send_message(chatid, 'https://www.youtube.com/watch?v=EinqBW7Yv-s')
 
 @bot.message_handler(commands=['ban'])
 def send_welcome(message):
