@@ -526,6 +526,7 @@ def test_send_message_with_inlinemarkup(self):
   '/address = Contract address\n'
   '/links = รวมลิ้งต่างๆของ TENFI\n'
   '/roadmap = แผนโปรเจคในอนาคต\n'
+  '/howto = วิธีใช้งาน TENFI และ Yieldex เบื้องต้น\n'
   '/tokenomics = แผนธุรกิจของเรา\n'
   '/security = ความปลอดภัยของเรา\n'
   '/price = เช็คราคา\n'
