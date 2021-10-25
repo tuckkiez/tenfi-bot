@@ -508,13 +508,8 @@ def test_send_message_with_inlinemarkup(self):
   ret_msg = bot.send_animation(chatid, 'https://media.giphy.com/media/Js7cqIkpxFy0bILFFA/giphy.gif?cid=ecf05e47g885s8iw1nxa6vh56b8d0wa8zbu6rcziqp9hkog7&rid=giphy.gif&ct=g', disable_notification=True, reply_markup=markup)
   assert ret_msg.message_id 
 
-
   # '/กาว = เชิญ Dino มาปล่อยกาว\n'
   # ret_msg = bot.send_animation(chatid, 'https://media.giphy.com/media/Js7cqIkpxFy0bILFFA/giphy.gif?cid=ecf05e47g885s8iw1nxa6vh56b8d0wa8zbu6rcziqp9hkog7&rid=giphy.gif&ct=g', caption=text, disable_notification=True, reply_markup=markup)
- 
-  # ret_msg = bot.send_animation(chatid, 'https://media.giphy.com/media/Ta4mvw2BRONmQHNFOf/giphy.gif', caption=text, disable_notification=True, reply_markup=markup)
-  # wellcome_media = bot.send_animation(chatid, (random.choice(wellcome_gif)))
-
 
 @bot.message_handler(func=lambda m: True, content_types=['new_chat_members'])
 def test_send_message_with_inlinemarkup(self):
