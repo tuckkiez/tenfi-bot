@@ -121,19 +121,6 @@ def send_welcome(message):
   # bot.reply_to(message, 'อย่าหาทำ @MrDinoWolfofDefi')
   bot.send_message(chatid,'อย่าหาทำ @MrDinoWolfofDefi', reply_to_message_id=message.reply_to_message.id)
 
-# @bot.message_handler(commands=['test'])
-# def send_welcome(message):
-#   bot.send_message(chat_id_test,'อย่าหาทำ @MrDinoWolfofDefi', reply_to_message_id=message.reply_to_message.id)
-
-# @bot.message_handler(commands=['tracker'])
-# def send_welcome(message):
-#   bot.reply_to(message, 'สามารถดูมูลค่าสินทรัพย์ที่ฝากใน TEN ได้จากหลากหลายช่องทาง ดังนี้\n'
-#   '- https://apeboard.finance/\n'
-#   '- https://pacoca.io/\n'
-#   '- https://scv.finance/\n'
-#   '- https://tin.network/\n'
-#   '- https://v2.loremboard.finance/general/dashboard\n'
-#   '- https://www.jdiyield.com/')
 
 @bot.message_handler(commands=['tracker'])
 def send_welcome(message):
