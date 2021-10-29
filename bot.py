@@ -7,7 +7,7 @@ import re
 
 import random
 
-bot_token = '2068478237:AAHQ3iKHt3f0TdiLFvn3pv8JjOTZMqn2PS8'
+bot_token = '2068478237:AAGfOuICHUvvnuM55GE2s3Q7R8eumgne3-4'
 #https://api.telegram.org/bot1950492866:AAHoMApimzGSG3XOOCaTFfRhj7EUTzcSqpo/getMe
 #https://api.telegram.org/bot1950492866:AAHoMApimzGSG3XOOCaTFfRhj7EUTzcSqpo/setWebhook
 
@@ -139,6 +139,10 @@ def send_welcome(message):
 @bot.message_handler(commands=['gas'])
 def send_welcome(message):
   bot.reply_to(message, 'ถ้าพบปัญหาแก๊สแพงกว่าปกติ ลองลบทศนิยมของยอดที่จะฝากลงสักหนึ่งหลัก  ตัวอย่างเช่น 99.1234 เหลือ 99.123 แล้วค่อยทำรายการใหม่นะ')
+
+@bot.message_handler(commands=['price'])
+def send_welcome(message):
+  bot.reply_to(message, 'เช็คราคาได้ที่ห้องนี้ครับ https://t.me/BinanceRocketTENFI')
 
 @bot.message_handler(commands=['highgas'])
 def send_welcome(message):
