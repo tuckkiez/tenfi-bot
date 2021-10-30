@@ -7,7 +7,7 @@ import re
 
 import random
 
-bot_token = '2068478237:AAGfOuICHUvvnuM55GE2s3Q7R8eumgne3-4'
+bot_token = '2068478237:AAFvvqObNtM5DsuuPA9IUVUZ8xFy67VVAOU'
 #https://api.telegram.org/bot1950492866:AAHoMApimzGSG3XOOCaTFfRhj7EUTzcSqpo/getMe
 #https://api.telegram.org/bot1950492866:AAHoMApimzGSG3XOOCaTFfRhj7EUTzcSqpo/setWebhook
 
@@ -129,7 +129,11 @@ def send_welcome(message):
 
 @bot.message_handler(commands=['chart'])
 def send_welcome(message):
-  bot.reply_to(message, 'สามารถดูกราฟ TENFI ได้จากลิงค์นี้เลยครับ\n'
+  bot.reply_to(message, 'สามารถดูกราฟ TENFI ได้จากลิงค์นี้เลยครับ\n\n'
+
+  'tradingview\n'
+  'https://www.tradingview.com/symbols/TENFIBUSD/\n\n'
+
   'poocoin\n'
   'https://poocoin.app/tokens/0xd15c444f1199ae72795eba15e8c1db44e47abf62\n\n'
 
