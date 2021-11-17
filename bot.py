@@ -269,14 +269,14 @@ def send_welcome(message):
   '29 - beltETH (Belt)\n'
   '30 - 4Belt (Belt)\n'
   '31 - TRX/BUSD (Pancakeswap)\n'
-  '32 - SKILL/WBNB (Pancakeswap)\n' 
+  '32 - SKILL/WBNB (Pancakeswap)\n'         
   '33 - AXS/WBNB (Pancakeswap)\n'    
   '34 - UST/BUSD (Pancakeswap)\n'        
   '35 - POTS/BUSD (Pancakeswap)\n'
   '36 - C98/WBNB (Pancakeswap)\n'
   '37 - USDC/USDT (Pancakeswap)\n'
   '38 - BANANA  (Apeswap)\n'
-  '39 - DAI/BUSD (Apeswap) \n'
+  '39 - DAI/BUSD (Apeswap)\n'
   '40 - USDC/BUSD (Apeswap)\n'
   '41 - USDT/BUSD (Apeswap)\n'
   '42 - WBNB/BUSD (Apeswap)\n'
@@ -298,7 +298,20 @@ def send_welcome(message):
   '58 - BSW (Biswap)\n'
   '59 - ETH/BTCB (Biswap)\n'
   '60 - USDT/BUSD (Biswap)\n'
-  '61 - TENFI/WBNB (Biswap)')
+  '61 - TENFI/WBNB (Biswap)\n'
+  '62 - CHESS/USDC (Pancakeswap)\n'
+  '63 - SPS/WBNB (Pancakeswap)\n'
+  '65 - BP/WBNB (Pancakeswap)\n'
+  '66 - WBNB/HERO (Pancakeswap)\n'
+  '67 - CAKE/USDT (Pancakeswap)\n'
+  '68 - WBNB/BETA (Pancakeswap)\n'
+  '69 - ibBNB (Alpacafinance)\n'
+  '70 - ibBUSD (Alpacafinance)\n'
+  '71 - ibUSDT (Alpacafinance)\n'
+  '72 - ibBTCB (Alpacafinance)\n'
+  '73 - ibETH (Alpacafinance)\n'
+  '74 - ibTUSD (Alpacafinance)\n'
+  '75 - bALPACA (Alpacafinance)')
 
 @bot.message_handler(commands=['security'])
 def send_welcome(message):
