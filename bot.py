@@ -7,7 +7,7 @@ import re
 
 import random
 
-bot_token = '2068478237:AAEHEyI70-GKyelC4gul7Zd0uDF_tz_10NM'
+bot_token = '2068478237:AAHAJbChndRNMGh-Ozcb7SL9EsmDL27SS4s'
 #https://api.telegram.org/bot1950492866:AAHoMApimzGSG3XOOCaTFfRhj7EUTzcSqpo/getMe
 #https://api.telegram.org/bot1950492866:AAHoMApimzGSG3XOOCaTFfRhj7EUTzcSqpo/setWebhook
 
