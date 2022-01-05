@@ -36,7 +36,7 @@ def is_api_group(chat_id):
 
 mrten = 'https://i.imgur.com/FsHc8a0.jpg'
 hold_ten = 'https://i.imgur.com/2pol3If.jpg'
-roadmap = 'https://i.imgur.com/PwIgfG3.jpg'
+roadmap = 'https://i.imgur.com/5FR38cC.jpg'
 founders = 'https://i.imgur.com/cesQlYQ.jpg'
 intro = 'https://i.imgur.com/zAKBxfK.jpg'
 yieldex_img = 'https://i.imgur.com/QI7iyHN.png'
@@ -360,7 +360,8 @@ def send_welcome(message):
 
 @bot.message_handler(commands=['roadmap'])
 def send_welcome(message):
-   bot.reply_to(message, 'TEN มีอะไรมาใหม่บ้างในช่วงนี้? 🗺\n'
+  bot.send_photo(chatid, roadmap, ' ')
+  bot.reply_to(message, 'TEN มีอะไรมาใหม่บ้างในช่วงนี้? 🗺\n'
   'จากที่ทุกๆได้อ่านแผนการพัฒนาโครงการใน medium (https://medium.com/tenfinance/ten-x-future-f0d44048f1a). มีหลากหลายสิ่งที่ได้พัฒนาและเกิดขึ้นแล้ว และเรามาอัพเดตว่ามีอะไรที่เกิดขึ้นและกำลังจะมาในเร็วๆนี้กันบ้างครับ :\n\n'
 
   '📅 Q3 2021 - เร็วๆนี้\n'
